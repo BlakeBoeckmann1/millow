@@ -7,4 +7,10 @@ const tokens = (n) => {
 
 describe('Escrow', () => {
 
+it('saves the addresses',async () => {
+ const MOBOGOBBLER = await ethers.getContractFactory ('MOBOGOBBLER')
+ MOBOGOBBLER = await MOBOGOBBLER.deploy()
+
+ console.log(MOBOGOBBLER.address)
+  })
 })
